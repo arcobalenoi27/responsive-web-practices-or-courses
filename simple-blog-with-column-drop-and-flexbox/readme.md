@@ -1,4 +1,4 @@
-#Responsive practice - Simple blog- colum drop
+#Responsive practice - Simple blog- column drop
 ###it is a simple blog site using Column-Drop pattern.
 Try to build a blog site using the concept of responsive web design  pattern. I use Column-Drop pattern this time. And I use flexbox to build this simple blog-like site.
 
