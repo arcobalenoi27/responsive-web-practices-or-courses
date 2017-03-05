@@ -1,5 +1,5 @@
 #Responsive practice - Email Layout - Layout Shifter
-###it is a simple blog site using Column-Drop pattern.
+###it is a Email Layout using Layout Shifter.
 Try to build an Email layout using the concept of responsive web design  pattern. 
 I use Layout Shifter pattern this time. And I use pure CSS to build this simple blog-like site, but I use the normalize.css to reset the default style.
 
