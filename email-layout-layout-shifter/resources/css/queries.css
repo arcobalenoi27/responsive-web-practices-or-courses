@@ -1,0 +1,318 @@
+@media only screen and (min-width: 960px) {
+    .container {
+        /* make columns have same height and side by side  */
+        /* 把版面切成2塊等高的並排layout */
+        display: table;
+        height: 100vh;
+    }
+    
+    /* ----Navigation---- */
+    .nav-container {
+        width: 150px;
+        background: linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
+        height: 100%;
+        padding: 20px 0;
+        position: relative;
+        text-align: center;
+        /* make columns have same height and side by side  */
+        /* 把版面切成2塊等高的並排layout */
+        display: table-cell;
+    }
+    .nav-inner {
+        position: fixed;
+    }
+    
+    /* ----Email part---- */
+    .email-container {
+        width: calc(100% - 160px);
+        height: 100%;
+        /* make columns have same height and side by side  */
+        /* 把版面切成2塊等高的並排layout */
+        display: table-cell;
+/*        overflow: auto;*/
+    }
+    /* ----Email List---- */
+    .mail-list {
+        width: 350px;
+        height: 100%;
+        position: fixed;
+        overflow-y: auto;
+        z-index: 3;
+    }
+    /* The reading Email */
+    .email-reading {
+        width: calc(100% - 500px);
+        height: 100%;
+        display: inherit;
+        transform: translate(350px, 0);
+/*        display: none;*/
+    }
+    .email-items {
+        padding: 10px 13px;
+        
+    }
+    
+    /* ----Font Size of email list---- */
+    .sender {
+        font-size: 70%;
+        color: #999999;
+        margin: 0;
+    }
+    
+    .email-title {
+        font-size: 70%;
+    }
+    .email-description {
+        font-size: 56%;
+        margin: 6px 0;
+    }
+    
+    /* ----The reading email---- */
+    
+    .email-reading {
+        width: calc(100% - 500px);
+        height: 100%;
+        display: table-cell;
+        position: fixed;
+        overflow: auto;
+        transform: translate(350px, 0);
+        /* display: none; */
+        /* transform: scale(0.9); */
+    }
+    .email-header {
+        width: 100%;
+        padding: 16px 32px;
+        border-bottom: 1px solid #DDDDDD;
+
+    }
+}
+
+
+
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+    .container {
+        /* make columns have same height and side by side  */
+        /* 把版面切成2塊等高的並排layout */
+        display: table;
+        height: 100%;
+    }
+    .nav-container {
+        width: 150px;
+        background: linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
+        height: 100%;
+        padding: 20px 0;
+        position: relative;
+        text-align: center;
+        /* make columns have same height and side by side  */
+        /* 把版面切成2塊等高的並排layout */
+        display: table-cell;
+    }
+
+    
+    /* ----Email part---- */
+    .email-container {
+        width: calc(100% - 160px);
+        height: 100%;
+        /* make columns have same height and side by side  */
+        /* 把版面切成2塊等高的並排layout */
+        display: table-cell;
+        overflow: autoa;
+    }
+    /* ---------------------------------- */
+    /* Mail List */
+    /* 右邊內容卷軸以及內嵌列表, 使用fixed
+        讓信件列表不管頁面如何滾動固定於都右上方*/
+    /* ---------------------------------- */
+
+    .mail-list {
+        /*  這裡使用px單位, 因為如果使用%, 這個視窗
+            大小就會隨著視窗大小變動 */
+        height: 252px;
+        overflow-y: auto;
+        /* 讓Email list脫離原本的文件的排列(文檔流/flow),    這樣就不會佔據高度了 */
+        position: fixed;
+        z-index: 0;
+    }
+    
+    /* ----The reading mail---- */
+    .email-content {
+        /* 在正在閱讀的信件上方+一條區隔線, 用於區分信件
+           列表, 跟內容 */
+        border-top: 3px solid #DDDDDD;
+        /* 因為上面的email list 已經脫離原本網頁文件的
+           排列了, 所以不會佔高度, 故這裡用margin-top把它擠下來 */
+        margin-top: 252px;
+
+    }
+    .email-reading{
+        height: 65%;
+        z-index: 99;
+    }
+    
+    
+    /* ----讓導航欄永遠顯示在可視區不滾動---- */
+    .nav-inner {
+        position: fixed;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    /* ---------------------------------- */
+    /* Navigation */
+    /* ---------------------------------- */
+    .nav-container {
+        width: 100%;
+        background: linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
+        padding: 20px 0;
+        position: relative;
+        text-align: center;
+    }
+    .nav-menu-button {
+        display: block;
+    }
+    .row {
+        margin: 0 auto;
+    }
+    /* ----Toggle button for navigation bar---- */
+    .btn-in-nav {
+        margin: 20px 0;
+    }
+    
+    .nav-menu-button {
+        position: absolute;
+        color: #1B98DA;
+        top: 8px;
+        right: 5px;
+    }
+    
+    .nav-container .nav-list {
+        text-align: left;
+    }
+    /* ---Toggle the navigation bar---- */
+    .nav-container>.nav-inner {
+        display: none;
+    }
+    .nav-container>.nav-inner.active {
+        display: block;
+    }
+    
+    a.nav-links:link, 
+    a.nav-links:visited {
+        display: block;
+        text-decoration: none;
+        font-size: 85%;
+        color: #fff;
+        padding: 8px 16px;
+        margin-left: 10px;
+        transition: background-color 0.2s ease;
+    }
+    
+    a.nav-links:focus, 
+    a.nav-links:hover {
+        background-color: #c7adda;
+    }
+    .capitalize {
+        text-transform: capitalize;
+    }
+    
+    .email-count {
+        color: #22a1e4;
+        font-size: 95%;
+    }
+    .nav-heading {
+        color: #1578ad;
+        padding: 9px 17px;
+        text-transform: uppercase;
+        font-size: 95%;
+    }
+
+    /* ---------------------------------- */
+    /* Mail List */
+    /* ---------------------------------- */
+    .mail-list {
+        width: 100%;
+    }
+    /* ---each email---- */
+    .email-items {
+        border-bottom: 1px solid #DDDDDD;
+        border-left: 6px solid transparent;
+        background-color: #EEEEEE;
+        padding: 10px 13px;
+    }
+
+    /* ----Sender---- */
+    .sender-thumbnail-box {
+        vertical-align: top;
+        display: inline-block;
+    }
+    .sender-avatar {
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin-right: 5px;
+    }
+    .sender {
+        font-size: 81%;
+        color: #999999;
+        margin: 0;
+    }
+    
+    .email-title {
+        font-size: 90%;
+    }
+    .email-description {
+        font-size: 75%;
+        margin: 6px 0;
+    }
+    
+    /* ---- Grid layout ---- */
+    .space-1-2 {
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+    }
+    .space-3-4 {
+        display: inline-block;
+        width: 75%;
+        text-rendering: optimizeLegibility;
+    }
+    
+/*    The email you 're reading */
+    .email-reading {
+        width: 100%;
+    }
+    .email-content {
+        border-top: 1px solid #DDDDDD;
+        width: 100%;
+    }
+    .email-header {
+        width: 100%;
+        padding: 16px 32px;
+        border-bottom: 1px solid #DDDDDD;
+    }
+    .email-body {
+        padding: 16px 32px;
+    }
+    
+    .email-body * {
+        font-size: 78%;
+        margin: 16px 0;
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+    .email-conetent-title {
+        padding-top: 16px;
+        font-size: 150%;
+    }
+    .email-content-meta {
+        font-size: 95%;
+        letter-spacing: normal;
+    }
+    .email-from {
+        color: #1BA8F9;
+    }
+    .timestamp {
+        color: #999999;
+    }
+}

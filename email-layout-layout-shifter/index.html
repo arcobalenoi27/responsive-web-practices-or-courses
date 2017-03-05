@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/css/normalize.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/queries.css">
+    
+</head>
+<body>
+   <div class="container">
+        <nav class="nav-container">
+               <a href="#" class="nav-menu-button capitalize">menu</a>
+               <div class="nav-inner">
+                   <button class="btn-primary btn font-white btn-in-nav">Compose</button>
+                   <ul class="nav-list">
+                        <li class="nav-items">
+                        <a href="#" class="nav-links capitalize">
+                            inbox
+                            <span class="email-count">(2)</span>
+                        </a>
+                            </li>
+                        <li class="nav-items"><a href="#" class="nav-links capitalize">important</a></li>
+                        <li class="nav-items"><a href="#" class="nav-links capitalize">sent</a></li>
+                        <li class="nav-items"><a href="#" class="nav-links capitalize">draft</a></li>
+                        <li class="nav-items"><a href="#" class="nav-links capitalize">trash</a></li>
+                        <li class="nav-heading">Labels</li>
+                        <li class="nav-items">
+                            <a href="#" class="nav-links capitalize">
+                            <span class="email-label label-personal"></span>
+                                personal
+                            </a>
+                        </li>
+                        <li class="nav-items">
+                            <a href="#" class="nav-links capitalize">
+                            <span class="email-label label-work"></span>
+                                work
+                            </a>
+                        </li>
+                        <li class="nav-items">
+                            <a href="#" class="nav-links capitalize">
+                            <span class="email-label label-travel"></span>
+                            travel
+                            </a>
+                        </li>
+                   </ul>  
+
+               </div>
+        </nav>
+        
+        <div class="email-container">
+           
+            <div class="mail-list">
+                <div class="email-items email-selected">
+                    <div class="sender-thumbnail-box">
+                        <img src="./resources/img/mario-clark.jpg" alt="Mario Clark" class="sender-avatar">
+                    </div>
+                    <div class="space-3-4">
+                        <h5 class="sender">Mario Clark</h5>
+                        <h4 class="email-title">
+                            Lecture notes in Front-End development
+                        </h4>
+                        <article class="email-description">
+                            These are some notes I took from the lecture of the Front-End development foundation. I hope it will help you somehow. 
+                        </article>
+                    </div>
+                </div>
+                <!--        2nd email start       -->
+                <div class="email-items email-mark-purple">
+                    <div class="sender-thumbnail-box">
+                        <img src="./resources/img/justin-robertson.jpg" alt="Justin Robertson" class="sender-avatar">
+                    </div>
+                    <div class="space-3-4">
+                        <h5 class="sender">Justin Robertson</h5>
+                        <h4 class="email-title">Re:Pull Requests[Justin/Landing page UI] Eila (#24)</h4>
+                        <article class="email-description">
+                            Hey, I had some feedback for pull request #24. We should adjust the layout of this page so it looks better on mobile.
+                        </article>
+                    </div>
+                </div>
+                <!--        3rd email start       -->
+                <div class="email-items email-mark-purple">
+                    <div class="sender-thumbnail-box">
+                        <img src="./resources/img/Medium.png" alt="Medium" class="sender-avatar">
+                    </div>
+                    <div class="space-3-4">
+                        <h5 class="sender">Medium Daily Digest</h5>
+                        <h4 class="email-title">
+                            10 Things You Must Do to Land a Junior Web Developer Job
+                        </h4>
+                        <article class="email-description">
+                            “Junior web developer” is the term commonly used for people starting in the web development industry.
+                        </article>
+                    </div>
+                </div>
+                <!--        4th email start       -->
+                <div class="email-items">
+                    <div class="sender-thumbnail-box">
+                        <img src="./resources/img/udemy.png" alt="Udemy" class="sender-avatar">
+                    </div>
+                    <div class="space-3-4">
+                        <h5 class="sender">Udemy</h5>
+                        <h4 class="email-title">
+                            Eila, welcome to Learn Ruby on Rails foundation
+                        </h4>
+                        <article class="email-description">
+                            Course: Learn Ruby on Rails Foundation
+                        </article>
+                    </div>
+                </div>
+                <!--        5th email start       -->
+                <div class="email-items">
+                    <div class="sender-thumbnail-box">
+                        <img src="./resources/img/house.jpg" alt="Guesthouse" class="sender-avatar">
+                    </div>
+                    <div class="space-3-4">
+                        <h5 class="sender">丸々ハウス</h5>
+                        <h4 class="email-title">
+                            丸々ハウスでございます。渋谷の物件の件について
+                        </h4>
+                        <article class="email-description">
+                            前回ご案内させて頂いた渋谷1物件が他の方の予約で埋まり、満室となりました。申し訳ございません。
+                            現在の空き予定をご案内いたします。
+                            ＜新宿西1＞
+                            ・シェアハウス
+                            ・￥35,800/月
+                            ・4/12～入居可能
+                            ＜池袋西武5＞
+                            ・個室
+                            ・￥42,800/月
+                            ・4/10～入居可能
+                            ご入居可能なお部屋がございますがいかがでしょうか。
+                        </article>
+                    </div>
+                </div>
+                <!--        6th email start       -->
+                <div class="email-items">
+                    <div class="sender-thumbnail-box">
+                        <img src="./resources/img/florence.jpg" alt="Florence Lin" class="sender-avatar">
+                    </div>
+                    <div class="space-3-4">
+                        <h5 class="sender">Florence Lin</h5>
+                        <h4 class="email-title">
+                            部落格更新
+                        </h4>
+                        <article class="email-description">
+                            部落格的介面已經更新囉，有空可以上來使用看看喔!
+                            如果有更多使用心得，請提供給我們方便我們改善User Experience。
+                        </article>
+                    </div>
+                </div>
+                <!--        7th email start       -->
+                <div class="email-items">
+                    <div class="sender-thumbnail-box">
+                        <img src="./resources/img/omnifood.png" alt="Omnifood" class="sender-avatar">
+                    </div>
+                    <div class="space-3-4">
+                        <h5 class="sender">Omnifood</h5>
+                        <h4 class="email-title">
+                            Omnifood - Offer letter
+                        </h4>
+                        <article class="email-description">
+                            Thank you for providing your project work on time. We were very satisfied with your solution.
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <!--        the Email you're reading-->
+            <main class="email-reading">
+                <div class="email-content">
+                    <header class="email-header">
+                        <div class="space-1-2">
+                            <h1 class="email-conetent-title">
+                                Lecture notes in Front-End development
+                            </h1>
+                            <p class="email-content-meta">
+                                From
+                                <a class="email-from" title="mario.clark@example.com">
+                                    Mario Clark
+                                </a>
+                                at
+                                <span class="timestamp">4:30pm, February 27, 2017</span>
+                            </p>
+                        </div>
+                        <div class="space-1-2">
+                            <button class="btn-default capitalize">reply</button>
+                            <button class="btn-default btn-gradient-gray capitalize">
+                                forward
+                            </button>
+                            <button class="btn-default capitalize">move to</button>
+                        </div>
+                    </header>
+                    <article class="email-body">
+                        <p>
+                            These are some notes I took from the lecture of the Front-End development foundation. I hope it will help you somehow. 
+                        </p>
+
+                        <p>
+                            The easiest way to try out Vue.js is using the 
+                            <a href="https://jsfiddle.net/chrisvfritz/50wL7mdz/" target="_blank" rel="external">JSFiddle Hello World example
+                            </a>
+                            . Feel free to open it in another tab and follow along as we go through some basic examples. Or, you can simply create an 
+                            <code>.html</code>
+                             file and include Vue with:
+
+                             <code>
+                                  &lt;script src="https://unpkg.com/vue"&gt;&lt;/script&gt;
+                             </code>
+                        </p>
+
+                        <p>
+                            The 
+                            <a href="https://vuejs.org/v2/guide/installation.html">Installation
+                            </a> 
+                            page provides more options of installing Vue. Note that we <strong>do not</strong> recommend beginners to start with 
+                            <code>vue-cli</code>
+                            , especially if you are not yet familiar with Node.js-based build tools.
+                        </p>
+
+                        <h2>
+                            Declarative Rendering
+                        </h2>
+
+                        <p>
+                            At the core of Vue.js is a system that enables us to declaratively render data to the DOM using straightforward template syntax:
+                        </p>
+
+                        <pre>
+                            <code>
+   <span class="tag">
+        &lt;div id=<span class="string">"app"</span>&gt;
+             {{ message }}
+        &lt;/div&gt;
+   </span>
+
+    <span class="js-code">
+        <span class="keyword">var</span> app = <span class="keyword">new</span> Vue({
+          el: <span class="string">'#app'</span>,
+          data: {
+            message: <span class="string">'Hello Vue!'</span>
+          }
+        })
+
+    </span>
+                            </code>
+                        </pre>
+
+                        <p>
+                            Outcome:
+                        </p>
+                        <p class="demo">
+                            Hello Vue!
+                        </p>
+
+                        <p>
+                            All of the above notes are part of Vue.js tutorials. I will send you this notes more.
+                        </p>
+                        <p>
+                            Regards,<br>
+                            Mario
+                        </p>
+                    </article>
+                </div>
+            </main>
+
+        </div>
+       
+   </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+</body>
+</html>
