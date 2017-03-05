@@ -9,6 +9,7 @@
     /* ----Navigation---- */
     .nav-container {
         width: 150px;
+        background: -webkit-linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
         background: linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
         height: 100%;
         padding: 20px 0;
@@ -44,6 +45,7 @@
         width: calc(100% - 500px);
         height: 100%;
         display: inherit;
+        -webkit-transform: translate(350px, 0);
         transform: translate(350px, 0);
 /*        display: none;*/
     }
@@ -75,6 +77,7 @@
         display: table-cell;
         position: fixed;
         overflow: auto;
+        -webkit-transform: translate(350px, 0);
         transform: translate(350px, 0);
         /* display: none; */
         /* transform: scale(0.9); */
@@ -98,6 +101,7 @@
     }
     .nav-container {
         width: 150px;
+        background: -webkit-linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
         background: linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
         height: 100%;
         padding: 20px 0;
@@ -163,6 +167,7 @@
     /* ---------------------------------- */
     .nav-container {
         width: 100%;
+        background: -webkit-linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
         background: linear-gradient(rgba(100, 72, 121, 0.95), rgba(106, 39, 155, 0.98));
         padding: 20px 0;
         position: relative;
@@ -205,6 +210,7 @@
         color: #fff;
         padding: 8px 16px;
         margin-left: 10px;
+        -webkit-transition: background-color 0.2s ease;
         transition: background-color 0.2s ease;
     }
     
