@@ -284,6 +284,11 @@
         text-rendering: optimizeLegibility;
     }
     
+    .space-1-2:first-of-type {
+        margin-right: 1.5%;
+        margin-bottom: 1.5%;
+    }
+    
 /*    The email you 're reading */
     .email-reading {
         width: 100%;
